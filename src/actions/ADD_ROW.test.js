@@ -10,7 +10,8 @@ describe("When I request to add a new row", function() {
     })
     it("Then render one row", function () {
         var afterID = 1;
-        const state = reducer(iniState, addRow(afterID))
+        var action = addRow(afterID);
+        const state = reducer(initState, action);
         expect(true).toBe(true);
     });
 });
