@@ -13,7 +13,10 @@ describe('When I request to add a new row', () => {
     const state = reducer(initState, action);
     expect(state).toBeDefined();
     expect(state.rows).toBeDefined();
-    
+    expect(state.rows.length).toBe(1);
+    expect(state.rows).toEqual([
+        {id: 0, order: 0}
+    ])
 
   });
 });
