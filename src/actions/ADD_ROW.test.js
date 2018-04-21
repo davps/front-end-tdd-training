@@ -4,6 +4,6 @@
 
 import initState from '../initState'
 
-describe(function () {
+describe("When I request to add a new row", function() {
     
-})
+});
