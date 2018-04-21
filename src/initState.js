@@ -1,4 +1,4 @@
-export const initState = {
+export default {
   hover: -1,
   rows: [
     {
