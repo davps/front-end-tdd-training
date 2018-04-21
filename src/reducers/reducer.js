@@ -2,6 +2,15 @@ import { List } from 'immutable';
 
 export default function reducer(state, action) {
   if (action.type === 'ADD_ROW') {
+    if(typeof action.afterID !== 'number'){
+        throw new Error('afterID must be numeric');
+    }
+
+    if(!state.find(o=>o.id === action.afterID)){
+        throw
+    }
+
+
     const id = Math.max(-1, ...state.rows.map(o => o.id)) + 1;
     var row = { id, order: 1 };
     const rows = List(state.rows)
