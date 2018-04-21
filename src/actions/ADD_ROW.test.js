@@ -10,7 +10,7 @@ describe('When I request to add a new row', () => {
   it('Then we should have one row', () => {
     expect(initState.rows).toEqual([]);
 
-    var action = { type: 'ADD_ROW', afterID: 1 };
+    const action = { type: 'ADD_ROW', afterID: 1 };
     const state = reducer(initState, action);
 
     expect(state).toBeDefined();
