@@ -1,5 +1,7 @@
+# This is a repository I've used to teach Redux 
 
-# References
+
+## References
 
 Growing Object-Oriented Software, Guided by Tests 1st Edition by Steve Freeman 
 
